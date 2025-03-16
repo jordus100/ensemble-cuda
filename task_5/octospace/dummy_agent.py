@@ -1,4 +1,7 @@
 # Skeleton for Agent class
+import numpy as np
+from path_finder import find_next_move
+
 
 class Agent:
     def get_action(self, obs: dict) -> dict:
@@ -44,6 +47,7 @@ class Agent:
         :param obs:
         :return:
         """
+        print(find_next_move(obs['map'], (35, 40), (40, 40), 15))
 
         return {
             "ships_actions": [],
